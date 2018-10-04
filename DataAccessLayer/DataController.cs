@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class XL_Bang : DataTable
+    public class DataController : DataTable
     {
         #region Biến cục bộ
         public static string Connection_String = "Data Source=.;Initial Catalog=QLSINHVIEN4;Integrated Security=True";
@@ -33,14 +33,17 @@ namespace DataAccessLayer
         #endregion
 
         #region Phương thức khởi tạo
-        public XL_Bang() : base() { }
-        public XL_Bang(String tenBang) // Tạo mới với tên bảng
+        public DataController() : base() { }
+        public DataController(String tenBang) // Tạo mới với tên bảng
         {
-
+            this.tenBang = tenBang;
+            DocBang();
         }
-        public XL_Bang(String tenBang, String chuoiSQL) // Tạo mới với câu truy vấn
+        public DataController(String tenBang, String chuoiSQL) // Tạo mới với câu truy vấn
         {
-
+            this.tenBang = tenBang;
+            this.chuoiSQL = chuoiSQL;
+            DocBang();
         }
         #endregion
 
