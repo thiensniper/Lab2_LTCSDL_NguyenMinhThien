@@ -90,6 +90,13 @@
       <Project>{1e2c5c63-c261-4abf-bb7b-575e24b4c666}</Project>
       <Name>BussinessLogicLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{85898191-0DE6-468B-B87C-C4A5924D3C53}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

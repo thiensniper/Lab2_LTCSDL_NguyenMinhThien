@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLogicLayer
 {
-    class KetQua : DataController
+    public class KetQua : DataController
     {
         public KetQua() : base("KETQUA") { }
         public KetQua(string chuoiSQL) : base("KETQUA", chuoiSQL) { }

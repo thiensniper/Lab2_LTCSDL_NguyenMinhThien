@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLogicLayer
 {
-    class MonHoc : DataController
+    public class MonHoc : DataController
     {
         public MonHoc() : base("MONHOC") { }
         public MonHoc(string chuoiSQL) : base("MONHOC", chuoiSQL) { }

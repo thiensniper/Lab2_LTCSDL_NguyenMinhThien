@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLogicLayer
 {
-    class ChuongTrinh : DataController
+    public class ChuongTrinh : DataController
     {
         public ChuongTrinh() : base("CHUONGTRINH") { }
         public ChuongTrinh(string chuoiSQL) : base("CHUONGTRINH", chuoiSQL) { }

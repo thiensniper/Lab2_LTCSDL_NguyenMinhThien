@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLogicLayer
 {
-    class Lop : DataController
+    public class Lop : DataController
     {
         public Lop() : base("LOP") { }
         public Lop(string chuoiSQL) : base("LOP", chuoiSQL) { }
